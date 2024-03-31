@@ -10,7 +10,7 @@
 - Version COntrol System with Git
 - Challenge
 
-Week 3
+## Week 3
 - Application in Server
 - Web Server & Load Balancing
 - Challenge
