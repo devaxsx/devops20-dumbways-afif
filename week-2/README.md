@@ -5,9 +5,11 @@
 2. Penjelasan text manipulation beserta step by step
 3. Penjelasan tool htop atau nmon
 4. Buatlah BASH script untuk instalasi nginx
+- [Answer](manage-server-with-terminal.md)
 
 ## Challenge
 1. Install nodeJS using BASH Script
     - Installing nvm and npm
     - Exec bash
     - Checking nvm, npm, and node version
+- [Answer](challenge.md)
