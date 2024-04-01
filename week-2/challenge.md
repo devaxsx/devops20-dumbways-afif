@@ -5,3 +5,5 @@
     - Exec bash
     - Checking nvm, npm, and node version
 ![NodeJS Bash Script](screenshots/challenge-1.jpg)
+
+Kemudian jalankan 'chmod +x install-nvm-npm.sh' dan diakhiri dengan './install-nvm-npm.sh'
