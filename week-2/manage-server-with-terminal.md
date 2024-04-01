@@ -5,23 +5,29 @@
 
 2. Penjelasan text manipulation beserta step by step
     - Echo
+      
     ![2.0](screenshots/2.0.jpg)
     
     - Sort
+      
     ![2.1](screenshots/2.1.jpg)
 
     - Diff
+      
     ![2.2](screenshots/2.2.jpg)
 
     - Cat
+      
     ![2.3.0](screenshots/2.3.0.jpg)
 
     ![2.3.1](screenshots/2.3.1.jpg)
 
     - Sed
+      
     ![2.4](screenshots/2.4.jpg)
 
     - Grep
+      
     ![2.5](screenshots/2.5.jpg)
 
 3. Penjelasan tool htop atau nmon
