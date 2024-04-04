@@ -1,4 +1,4 @@
-# DevOps Dumbways Batch 20
+# Learning DevOps
 
 ## Week 1
 - Networking & VM
@@ -9,7 +9,7 @@
 
 ## Week 2
 - Manage Server with Terminal
-- Version COntrol System with Git
+- Version Control System with Git
 - Challenge
 - [Read More](week-2/README.md)
 
