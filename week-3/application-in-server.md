@@ -6,7 +6,7 @@
    Mono  : Aplikasi dibangun sebagai satu kesatuan besar yang utuh; Arsitekturnya Lebih sederhana dan cepat dibangun tapi sulit untuk diskala dan dimodifikasi; Arsitekturnya relatif lebih sederhana sehingga budget yang diperlukan relatif lebih rendah.
    Micro : Pendekatan arsitektur aplikasi dengan memecahnya menjadi layanan-layanan kecil yang terpisah; Arsitekturnya Lebih kompleks tapi lebih mudah diskala, dimodifikasi, dan diganti per-layanan; Arsitekturnya relatif kompleks sehingga budget yang diperlukan relatif lebih tinggi.
 
-2. Deploy aplikasi wayshub-frontend (NodeJS) dari repository ```https://github.com/dumbwaysdev/wayshub-frontend``` cara run aplikasi `npm start`
+2. Deploy aplikasi wayshub-frontend (NodeJS) dari repository ``` https://github.com/dumbwaysdev/wayshub-frontend ``` cara run aplikasi `npm start`
 
    Lakukan git clone pada direkotori lokal dari repositori github wayshub-frontend kemudian masuk ke direktori clone tersebut lalu install trio node (node.js, nvm, dan npm) didalamnya.
 
