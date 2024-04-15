@@ -48,4 +48,61 @@ Jadi intinya, web server adalah tempat di internet tempat halaman web disimpan d
 
    Suatu proses untuk membantu memastikan situs web tetap stabil dan cepat meskipun ada banyak pengguna yang mengaksesnya dengan cara membagi lalu lintas web ke beberapa server sehingga setiap server tidak terlalu sibuk dan situs web tetap dapat diakses dengan cepat sekalipun banyak yang mengaksesnya.
 
-4. implementasikan load balancing kepada aplikasi wayshub-frontend yang telah anda gunakan.
+4. Implementasikan load balancing kepada aplikasi wayshub-frontend yang telah anda gunakan.
+
+   Buat beberapa multipass yang dijadikan sebagai server host dan server aplikasi. Disini saya menggunakan multipass one sebagai server host kemudian multipass two dan three sebagai server dari aplikasi wayshub-frontend yang akan dijalankan untuk implementasi load balancing.
+
+   ![LB 1](screenshots/23.png)
+
+   Pastikan nginx pada server host sudah terinstall dan aktif.
+   
+   ![LB 2](screenshots/24.png)
+
+   ![LB 3](screenshots/25.png)
+
+   Kemudian jalankan server dari aplikasi wayshub-frontend pada multipass two dan three.
+
+   ![LB 4](screenshots/26.png)
+
+   ![LB 5](screenshots/27.png)
+
+   ![LB 6](screenshots/28.png)
+
+   ![LB 7](screenshots/29.png)
+
+   ![LB 8](screenshots/30.png)
+
+   ![LB 9](screenshots/31.png)
+
+   ![LB 10](screenshots/32.png)
+
+   ![LB 11](screenshots/33.png)
+
+   Kemudian kembali ke server host, pada direktori /etc/nginx buat direktori baru yang berisi file konfigurasi untuk load balancing atau bisa menggunakan file konfigurasi yang sebelumnya digunakan untuk reverse proxy.
+
+   ![LB 12](screenshots/34.png)
+
+   ![LB 13](screenshots/35.png)
+
+   Setelah itu edit file nginx.conf pada direktori /etc/nginx dengan menambahkan direktori dari file konfogurasi load balancing yang barusan dibuat pada bagian virtual host configs
+
+   ![LB 14](screenshots/36.png)
+
+   ![LB 15](screenshots/37.png)
+
+   Kemudian cek apakah file konfigurasi tidak ada error dan apabila sukses bisa reload nginx pada server host.
+
+   ![LB 16](screenshots/38.png)
+
+   Kemudian karena pada tahapan reverse proxy telah mengubah konfigurasi pada /etc/hosts dengan menambahkan alamat ip dari sever host serta dns yang digunakan, kita dapat langsung ke tahapan berikutnya yaitu cross check fungsi load balance.
+   
+   Pada dokumentasi berikut telah dilakukan :
+   - Mematikan kedua server aplikasi hasilnya bad gateway
+   - Menghidupkan salah satu server aplikasi hasilnya aplikasi berjalan sebagaimana mestinya
+   
+   Sehingga dapat disimpulkan bahwa fungsi load balancing berjalan dengan baik.
+
+   ![LB 17](screenshots/40.png)
+
+   ![LB 18](screenshots/39.png)
+
